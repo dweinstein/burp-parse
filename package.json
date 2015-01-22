@@ -1,6 +1,6 @@
 {
   "name": "burp-parse",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "parse a burp flow with base64 components",
   "bin": { "burp-parse": "./bin/burp-parse"},
   "directories": {
