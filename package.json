@@ -10,7 +10,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dweinstein/burp-parse.git"
+  },
   "keywords": [
+  "description": "parse a burp flow with base64 components",
     "burp",
     "log",
     "parse",
