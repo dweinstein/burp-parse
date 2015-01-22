@@ -1,0 +1,28 @@
+{
+  "name": "burp-parse",
+  "version": "1.0.0",
+  "description": "parse a burp flow with base64 components",
+  "bin": { "burp-parse": "./bin/burp-parse"},
+  "directories": {
+    "bin": "./bin"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "burp",
+    "log",
+    "parse",
+    "mitm",
+    "proxy",
+    "xml"
+  ],
+  "author": "dweinstein",
+  "license": "ISC",
+  "dependencies": {
+    "split": "^0.3.2",
+    "through2": "^0.6.3",
+    "xml-stream": "^0.4.5"
+  }
+}

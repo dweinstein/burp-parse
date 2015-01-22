@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+var through = require('through2').obj;
+
+var util = require('util');
+
+var parse = require('../index')(process.stdin);
+
+function print(item) {
+  console.log(
+    util.format(
+      'method: %s\nurl: %s\nhost: %s\nrequest:\n%s\nresponse\n%s\n',
+      item.method,
+      item.url, item.host, item.request, item.response
+  ));
+}
+
+parse.on('item', function (item) {
+  print(item);
+})
+.on('end', function () {
+  //console.log('done');
+});
+
